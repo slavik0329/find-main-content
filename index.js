@@ -1,6 +1,5 @@
 const TurndownService = require('turndown');
 const turndownPluginGfm = require('turndown-plugin-gfm');
-const { removeLineBreakTabs } = require('natural-content');
 
 const HEADERS = 'h1,h2,h3,h4,h5,h6,h7';
 const DIV_ARTICLE = 'article,.article,#article,section,table,.container';
@@ -59,6 +58,11 @@ const defaultOptions = {
   // Remove basic html tags that have no children
   removeEmptyTag: false
 };
+
+
+function removeLineBreakTabs(str) {
+  return str;
+}
 
 /**
  * findContent - Main function of the module

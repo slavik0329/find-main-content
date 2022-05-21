@@ -25,7 +25,6 @@
     "puppeteer": "^4.0.0"
   },
   "dependencies": {
-    "natural-content": "^1.2.3",
     "turndown": "^6.0.0",
     "turndown-plugin-gfm": "^1.0.2"
   }
